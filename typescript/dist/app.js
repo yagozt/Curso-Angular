@@ -43,5 +43,5 @@ var TurboCar = /** @class */ (function (_super) {
 }(Car));
 var possante = new TurboCar("A3");
 possante.drive();
-var carroPasseio = function (carro) { return carro.seat > 2; };
-console.log("Carro turbo \u00E9 bom para passeio ? " + (carroPasseio(possante) ? "Sim" : "Não"));
+var eCarroPasseio = function (carro) { return carro.seat > 2; };
+console.log("Carro turbo \u00E9 bom para passeio ? " + (eCarroPasseio(possante) ? "Sim" : "Não"));

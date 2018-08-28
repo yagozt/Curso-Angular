@@ -32,6 +32,6 @@ interface Transporte{
 let possante = new TurboCar("A3");
 possante.drive();
 
-let carroPasseio = (carro:Transporte) => carro.seat > 2;
+let eCarroPasseio = (carro:Transporte) => carro.seat > 2;
 
-console.log(`Carro turbo é bom para passeio ? ${carroPasseio(possante) ? "Sim" : "Não"}`)
+console.log(`Carro turbo é bom para passeio ? ${eCarroPasseio(possante) ? "Sim" : "Não"}`)
