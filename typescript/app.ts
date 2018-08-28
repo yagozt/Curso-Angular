@@ -1,34 +1,12 @@
-class Car implements Transporte{
-    seat: number;
-    constructor (public nome: string){
-        this.seat = 3;
-    }
+import {Car,Transporte} from "./car";
+import {TurboCar} from "./turboCar";
 
-    drive(){
-        console.log(`Driving the ${this.nome}`);
-    }
-}
 
 let ship = new Car("Gol quadrado");
 ship.drive();
 
-class TurboCar extends Car {
-    constructor(public nome:string){
-        super(nome);
-        this.seat = 1;
-    }
-    drive(){
-        if(Math.random() > 0.5){
-            console.log('Turbo on fire!');
-        }
-        else{
-            super.drive();
-        }
-    }
-}
-interface Transporte{
-    seat: number;
-}
+
+
 let possante = new TurboCar("A3");
 possante.drive();
 
