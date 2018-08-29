@@ -1,0 +1,9 @@
+h1 {
+    color: red;
+    border-left: 1px dashed black;
+}
+
+h3 {
+    color: blue;
+    border: 1px solid green;
+}

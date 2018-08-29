@@ -1,0 +1,10 @@
+<div *ngIf="student">
+  <label for="student.name">Student Name: <a href="#" (click)="clicked()" >{{student.name}} </a> </label>
+  <label for="student.age">Studant Age: {{student.age}} </label>
+  <label for="student.company">Job: {{student.company}} </label>
+  <label for="student.dateBirthday">Birthday: {{student.dateBirthday.toLocaleDateString() }} </label>
+  <div *ngIf="student.age >= 18">
+    <p>Pode beber! <button (click)="description.focus()">Focus</button> </p>
+    <textarea name="description" id="description" cols="30" rows="10" #description></textarea>
+  </div>
+</div>

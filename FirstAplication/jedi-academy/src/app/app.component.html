@@ -3,4 +3,7 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
+  <jad-header></jad-header>
+  <jad-student *ngFor="let student of students" [student]="student"></jad-student>
+  <jad-student></jad-student>
 </div>
